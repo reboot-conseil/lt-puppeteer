@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name":  "Frontend E2E Test",
+      "runtimeExecutable": "/home/${env:USER}/.nvm/versions/node/v18.18.2/bin/npm",
+      "runtimeArgs": [
+        "run",
+        "test"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "cwd": "${workspaceFolder}",
+    }
+  ]
+}
+  
