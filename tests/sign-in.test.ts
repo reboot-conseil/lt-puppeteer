@@ -3,13 +3,15 @@ import puppeteer from "puppeteer";
 describe("Filling sign-in form", () => {
 
     it("when not signed in, should only redirect to the dashboard page with the good credentials", async () => {
+
         // arrange
         const browser = await puppeteer.launch({
             headless: "new"
         });
         const page = await browser.newPage();
-        // act
         await page.goto(`http://localhost:3000`);
+
+        // act
         const usernameInput = await page.$("#username");
         await usernameInput?.type("admin");
         const passwordInput = await page.$("#password");

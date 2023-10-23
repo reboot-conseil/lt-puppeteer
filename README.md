@@ -18,4 +18,3 @@ Some startup code to get used to `puppeteer` and e2e tests.
 ## Going further
 
 This demo barely scratches the surface of what you can do with `puppeteer`. Here is a link to the docs: https://pptr.dev/. Have fun!
-```
